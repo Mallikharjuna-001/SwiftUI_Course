@@ -1,9 +1,13 @@
-//
-//  GridViewUI.swift
-//  SwiftUi
-//
-//  Created by Mallikharjuna on 17/09/25.
-//
+// ### What I Learned
+// Today, I learned how to create a grid view in SwiftUI using `LazyVGrid` with adaptive and fixed layouts. Grids are a versatile way to present data in a structured manner, and SwiftUI makes it easy to implement them with flexible layouts.
+
+// ### Key Concepts
+// - **LazyVGrid**: A container view that arranges its child views in a grid that grows vertically, creating items only when they are needed.
+// - **GridItem**: Defines a single item in a grid, specifying its size and spacing.
+
+// ### Example Code
+// Here is an example demonstrating a grid view with adaptive layout:
+
 
 import SwiftUI
 
