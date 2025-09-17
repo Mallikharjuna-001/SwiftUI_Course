@@ -13,6 +13,7 @@
 		18B1696F2E7930B2006D7FB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B1696E2E7930B2006D7FB5 /* Preview Assets.xcassets */; };
 		18FF4D092E7A878D00EC5406 /* AlertViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF4D082E7A878D00EC5406 /* AlertViewContrller.swift */; };
 		18FF4D0B2E7A91EC00EC5406 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF4D0A2E7A91EC00EC5406 /* SecondView.swift */; };
+		18FF4D0D2E7ABB2B00EC5406 /* GridViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF4D0C2E7ABB2B00EC5406 /* GridViewUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		18B1696E2E7930B2006D7FB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18FF4D082E7A878D00EC5406 /* AlertViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewContrller.swift; sourceTree = "<group>"; };
 		18FF4D0A2E7A91EC00EC5406 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		18FF4D0C2E7ABB2B00EC5406 /* GridViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				18B169692E7930AD006D7FB5 /* FirstView.swift */,
 				18FF4D082E7A878D00EC5406 /* AlertViewContrller.swift */,
 				18FF4D0A2E7A91EC00EC5406 /* SecondView.swift */,
+				18FF4D0C2E7ABB2B00EC5406 /* GridViewUI.swift */,
 				18B1696B2E7930B2006D7FB5 /* Assets.xcassets */,
 				18B1696D2E7930B2006D7FB5 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FF4D0D2E7ABB2B00EC5406 /* GridViewUI.swift in Sources */,
 				18B1696A2E7930AD006D7FB5 /* FirstView.swift in Sources */,
 				18B169682E7930AD006D7FB5 /* SwiftUiApp.swift in Sources */,
 				18FF4D0B2E7A91EC00EC5406 /* SecondView.swift in Sources */,

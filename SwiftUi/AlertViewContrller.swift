@@ -11,9 +11,7 @@ struct AlertViewContrller: View {
    @State private var alertPresented = false
     @State private var isNaviagete = false
     var body: some View {
-        
-        NavigationView{
-        VStack{
+        VStack {
             Button {
                 print("Alert")
                 alertPresented = true
@@ -21,27 +19,22 @@ struct AlertViewContrller: View {
                 Text("Tap me")
                     
             }
-            .frame(width: 100, height: 150, alignment: .center)
+            .frame(width: 200, height: 100, alignment: .center)
             .padding(EdgeInsets())
             .background(Color.red)
             .cornerRadius(10)
 
-            NavigationLink(destination:SecondView(),isActive:$isNaviagete){
+            NavigationLink(destination:GridViewUI(),isActive:$isNaviagete){
                 EmptyView()
             }
         }
-        }
         .navigationTitle("Alert")
         .alert(isPresented: $alertPresented, content: {
-            Alert(title: Text("Alert Title"),
-                  message:Text("Alert body of the message"),
-                  primaryButton:.default(Text("Primary Button"),action:{
-               
-                 print("Primary Button Tapped")
+            Alert(title: Text("GridView"),
+                  message:Text("Moving to Alert to GridView"),
+                  primaryButton:.default(Text("GridView"),action:{
                    alertPresented = false
                    isNaviagete = true
-                
-                
             }),
                   secondaryButton:.cancel(Text("Cancel"))
                   
