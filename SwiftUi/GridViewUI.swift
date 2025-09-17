@@ -13,9 +13,10 @@ import SwiftUI
 
 struct GridViewUI: View {
     let items = Array(1...1000)
+    let layout = [GridItem(.adaptive(minimum: 50))]
     var body: some View {
         ScrollView{
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 50))],spacing:20) {
+            LazyVGrid(columns: layout) {
             ForEach(items,id:\.self){ item in
                 Text("\(item)")
                     .frame(width: 50, height: 50)
