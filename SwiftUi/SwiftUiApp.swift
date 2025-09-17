@@ -11,7 +11,8 @@ import SwiftUI
 struct SwiftUiApp: App {
     var body: some Scene {
         WindowGroup {
-            FirstView()
+            //FirstView()
+            AlertViewContrller()
         }
     }
 }
