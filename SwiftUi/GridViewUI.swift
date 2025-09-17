@@ -5,8 +5,10 @@
 // - **LazyVGrid**: A container view that arranges its child views in a grid that grows vertically, creating items only when they are needed.
 // - **GridItem**: Defines a single item in a grid, specifying its size and spacing.
 
-// ### Example Code
-// Here is an example demonstrating a grid view with adaptive layout:
+// ### Grid Layout Types
+// 1. **Adaptive Layout**: Allows the grid to adjust the number of columns to fit the available space. Each item has a minimum width, and the grid adapts to accommodate as many items as possible within the given width.
+// 2. **Flexible Layout**: Allows each item to have a flexible width within a specified range. This ensures that the items resize to fit the available space while maintaining a minimum and maximum width.
+// 3. **Fixed Layout**: Specifies a fixed width for each item. The grid will have a fixed number of columns regardless of the available space.
 
 
 import SwiftUI
