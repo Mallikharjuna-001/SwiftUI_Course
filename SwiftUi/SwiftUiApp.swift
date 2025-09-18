@@ -12,7 +12,6 @@ struct SwiftUiApp: App {
     var body: some Scene {
         WindowGroup {
             FirstView()
-           // AlertViewContrller()
         }
     }
 }
