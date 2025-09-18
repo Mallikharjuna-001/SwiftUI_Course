@@ -13,10 +13,9 @@ struct AlertViewContrller: View {
     var body: some View {
         VStack {
             Button {
-                print("Alert")
                 alertPresented = true
             } label: {
-                Text("Tap me")
+                Text("Alert")
                     
             }
             .frame(width: 200, height: 100, alignment: .center)
@@ -24,11 +23,11 @@ struct AlertViewContrller: View {
             .background(Color.red)
             .cornerRadius(10)
 
-            NavigationLink(destination:GridViewUI(),isActive:$isNaviagete){
+            NavigationLink(destination:GridView(),isActive:$isNaviagete){
                 EmptyView()
             }
         }
-        .navigationTitle("Alert")
+        .navigationTitle("AlertView")
         .alert(isPresented: $alertPresented, content: {
             Alert(title: Text("GridView"),
                   message:Text("Moving to Alert to GridView"),

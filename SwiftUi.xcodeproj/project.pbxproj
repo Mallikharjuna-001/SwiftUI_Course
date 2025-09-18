@@ -9,17 +9,21 @@
 /* Begin PBXBuildFile section */
 		182B1DF02E7BAB04007149E1 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 182B1DEF2E7BAB04007149E1 /* SwiftUICharts */; };
 		182B1DF22E7BAB6A007149E1 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B1DF12E7BAB6A007149E1 /* ChartView.swift */; };
+		182B1DF42E7BE969007149E1 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B1DF32E7BE969007149E1 /* FormView.swift */; };
+		182B1DF72E7BE9C0007149E1 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B1DF62E7BE9C0007149E1 /* FormViewModel.swift */; };
 		18B169682E7930AD006D7FB5 /* SwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B169672E7930AD006D7FB5 /* SwiftUiApp.swift */; };
 		18B1696A2E7930AD006D7FB5 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B169692E7930AD006D7FB5 /* FirstView.swift */; };
 		18B1696C2E7930B2006D7FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B1696B2E7930B2006D7FB5 /* Assets.xcassets */; };
 		18B1696F2E7930B2006D7FB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B1696E2E7930B2006D7FB5 /* Preview Assets.xcassets */; };
 		18FF4D092E7A878D00EC5406 /* AlertViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF4D082E7A878D00EC5406 /* AlertViewContrller.swift */; };
 		18FF4D0B2E7A91EC00EC5406 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF4D0A2E7A91EC00EC5406 /* SecondView.swift */; };
-		18FF4D0D2E7ABB2B00EC5406 /* GridViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF4D0C2E7ABB2B00EC5406 /* GridViewUI.swift */; };
+		18FF4D0D2E7ABB2B00EC5406 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF4D0C2E7ABB2B00EC5406 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		182B1DF12E7BAB6A007149E1 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		182B1DF32E7BE969007149E1 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		182B1DF62E7BE9C0007149E1 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 		18B169642E7930AD006D7FB5 /* SwiftUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B169672E7930AD006D7FB5 /* SwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiApp.swift; sourceTree = "<group>"; };
 		18B169692E7930AD006D7FB5 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
@@ -27,7 +31,7 @@
 		18B1696E2E7930B2006D7FB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18FF4D082E7A878D00EC5406 /* AlertViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewContrller.swift; sourceTree = "<group>"; };
 		18FF4D0A2E7A91EC00EC5406 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
-		18FF4D0C2E7ABB2B00EC5406 /* GridViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewUI.swift; sourceTree = "<group>"; };
+		18FF4D0C2E7ABB2B00EC5406 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182B1DF52E7BE9B0007149E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				182B1DF62E7BE9C0007149E1 /* FormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		18B1695B2E7930AD006D7FB5 = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +73,13 @@
 		18B169662E7930AD006D7FB5 /* SwiftUi */ = {
 			isa = PBXGroup;
 			children = (
+				182B1DF52E7BE9B0007149E1 /* ViewModel */,
 				18B169672E7930AD006D7FB5 /* SwiftUiApp.swift */,
 				18B169692E7930AD006D7FB5 /* FirstView.swift */,
 				18FF4D082E7A878D00EC5406 /* AlertViewContrller.swift */,
 				18FF4D0A2E7A91EC00EC5406 /* SecondView.swift */,
-				18FF4D0C2E7ABB2B00EC5406 /* GridViewUI.swift */,
+				18FF4D0C2E7ABB2B00EC5406 /* GridView.swift */,
+				182B1DF32E7BE969007149E1 /* FormView.swift */,
 				182B1DF12E7BAB6A007149E1 /* ChartView.swift */,
 				18B1696B2E7930B2006D7FB5 /* Assets.xcassets */,
 				18B1696D2E7930B2006D7FB5 /* Preview Content */,
@@ -157,11 +171,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FF4D0D2E7ABB2B00EC5406 /* GridViewUI.swift in Sources */,
+				18FF4D0D2E7ABB2B00EC5406 /* GridView.swift in Sources */,
 				18B1696A2E7930AD006D7FB5 /* FirstView.swift in Sources */,
+				182B1DF42E7BE969007149E1 /* FormView.swift in Sources */,
 				18B169682E7930AD006D7FB5 /* SwiftUiApp.swift in Sources */,
 				18FF4D0B2E7A91EC00EC5406 /* SecondView.swift in Sources */,
 				18FF4D092E7A878D00EC5406 /* AlertViewContrller.swift in Sources */,
+				182B1DF72E7BE9C0007149E1 /* FormViewModel.swift in Sources */,
 				182B1DF22E7BAB6A007149E1 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
