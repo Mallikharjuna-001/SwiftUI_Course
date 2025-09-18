@@ -13,7 +13,7 @@
 
 import SwiftUI
 
-struct GridViewUI: View {
+struct GridView: View {
     let items = Array(1...1000)
     let layout = [GridItem(.adaptive(minimum: 50))]
     var body: some View {
@@ -28,11 +28,12 @@ struct GridViewUI: View {
             }
           }
         }
+        .navigationTitle("GridView")
     }
 }
 
-struct GridViewUI_Previews: PreviewProvider {
+struct GridView_Previews: PreviewProvider {
     static var previews: some View {
-        GridViewUI()
+        GridView()
     }
 }
